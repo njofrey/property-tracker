@@ -9,6 +9,7 @@
 - Estado/deduplicación: Upstash Redis.
 - Runtime: GitHub Actions con Python 3.12.
 - Alertar solamente después del baseline inicial.
+- El cron de 30 minutos está preparado pero pausado hasta configurar URL y secrets.
 
 ## Objetivo
 
@@ -28,4 +29,3 @@ Detectar publicaciones nuevas en una búsqueda definida de Portal Inmobiliario C
 ## Próximo paso exacto
 
 Validar el extractor con la URL real, crear repositorio Git, configurar secrets, ejecutar manualmente para crear baseline y confirmar una alerta controlada.
-

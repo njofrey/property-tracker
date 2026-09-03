@@ -46,7 +46,7 @@ La primera ejecución crea un baseline y no envía avisos antiguos. Las ejecucio
 
 ## GitHub Actions
 
-El workflow corre cada 30 minutos y también permite ejecución manual. GitHub puede retrasar cron jobs durante periodos de alta carga; la cadencia no es una garantía de minuto exacto.
+El workflow permite ejecución manual. El cron de 30 minutos está preparado pero comentado hasta configurar la búsqueda y los secrets. Una vez activado, GitHub puede retrasarlo durante periodos de alta carga; la cadencia no es una garantía de minuto exacto.
 
 Secrets requeridos en GitHub:
 
