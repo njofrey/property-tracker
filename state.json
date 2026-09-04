@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "initialized": true,
+  "seen": [
+    "MLC1555772123",
+    "MLC1999188633",
+    "MLC2069551715",
+    "MLC2076419401",
+    "MLC2092769443",
+    "MLC2095179325",
+    "MLC2111757329",
+    "MLC2171596707",
+    "MLC2176940611",
+    "MLC2187466049",
+    "MLC2189062253",
+    "MLC2189064289",
+    "MLC2189295723",
+    "MLC2193309073",
+    "MLC2196954155",
+    "MLC2202408383",
+    "MLC2204132457",
+    "MLC2211620603",
+    "MLC2211795891",
+    "MLC2212103999",
+    "MLC2212104795",
+    "MLC2215984923",
+    "MLC2910310870",
+    "MLC4234256998",
+    "MLC4257196510",
+    "MLC4276969286",
+    "MLC4296982018",
+    "MLC4320031120",
+    "MLC4328827262",
+    "MLC4349815316",
+    "MLC4361685810",
+    "MLC4366170582",
+    "MLC4373694340",
+    "MLC4373707116",
+    "MLC4377011030",
+    "MLC4377018876",
+    "MLC4377020932",
+    "MLC4381516218",
+    "MLC4385482140",
+    "MLC4385492120",
+    "MLC4385507772",
+    "MLC4396263646",
+    "MLC4397432114",
+    "MLC4404569212",
+    "MLC4409923768",
+    "MLC4410905918",
+    "MLC4411448278",
+    "MLC4417102134",
+    "MLC4421201298",
+    "MLC4427640928",
+    "MLC4430389390",
+    "MLC4430690756",
+    "MLC4436477726",
+    "MLC4436478390",
+    "MLC4437059082",
+    "MLC4437283526",
+    "MLC4441098136",
+    "MLC4444274072",
+    "MLC4447097228",
+    "MLC4447120348",
+    "MLC4447126308",
+    "MLC4447127954",
+    "MLC4447968610"
+  ],
+  "items": {
+    "MLC1555772123": {
+      "id": "MLC1555772123",
+      "title": "Imu San Cristóbal",
+      "url": "https://portalinmobiliario.com/MLC-1555772123-imu-san-cristobal-_JM",
+      "price_label": "UF 14",
+      "price_value": 14,
+      "currency": "UF",
+      "location": "Inés Matte Urrejola 900, Providencia, Las Condes, Bellavista, Providencia"
+    },
+    "MLC1999188633": {
+      "id": "MLC1999188633",
+      "title": "Pio X",
+      "url": "https://portalinmobiliario.com/MLC-1999188633-pio-x-_JM",
+      "price_label": "$ 435.000",
+      "price_value": 435000,
+      "currency": "CLP",
+      "location": "San Pío X 2555, Providencia, Las Condes, Metro Tobalaba - Mall Costanera, Providencia"
+    },
+    "MLC2069551715": {
+      "id": "MLC2069551715",
+      "title": "Metro Tobalaba / 2 Dormitorio Mas Otro Pequeño / Providencia",
+      "url": "https://portalinmobiliario.com/MLC-2069551715-metro-tobalaba-2-dormitorio-mas-otro-pequeno-providencia-_JM",
+      "price_label": "$ 850.000",
+      "price_value": 850000,
+      "currency": "CLP",
+      "location": "Av. Luis Thayer Ojeda 1 - 300, Providencia, Metro Tobalaba - Mall Costanera, Providencia"
+    },
+    "MLC2076419401": {
+      "id": "MLC2076419401",
+      "title": "(adm) Depto 1d1b, En Providencia",
+      "url": "https://portalinmobiliario.com/MLC-2076419401-adm-depto-1d1b-en-providencia-_JM",
+      "price_label": "$ 640.000",
+      "price_value": 640000,
+      "currency": "CLP",
+      "location": "Eliodoro Yañez 1250, Salvador, Providencia"
+    },
+    "MLC2092769443": {
+      "id": "MLC2092769443",
+      "title": "Un Dormitorio Con Estacionamiento Y Bodega",
+      "url": "https://portalinmobiliario.com/MLC-2092769443-un-dormitorio-con-estacionamiento-y-bodega-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Jorge Matte Gormaz, Providencia, Metro Bilbao, Providencia"
+    },
+    "MLC2095179325": {
+      "id": "MLC2095179325",
+      "title": "Arriendo 1 Dorm Dario U/ Pedro De Valdivia Metro Est Y Bga",
+      "url": "https://portalinmobiliario.com/MLC-2095179325-arriendo-1-dorm-dario-u-pedro-de-valdivia-metro-est-y-bga-_JM",
+      "price_label": "$ 800.000",
+      "price_value": 800000,
+      "currency": "CLP",
+      "location": "Darío Urzúa 2100 - 2400, Providencia, Providencia"
+    },
+    "MLC2111757329": {
+      "id": "MLC2111757329",
+      "title": "Depto En Arriendo De 1d+1b, Metro Inés De Suarez",
+      "url": "https://portalinmobiliario.com/MLC-2111757329-depto-en-arriendo-de-1d1b-metro-ines-de-suarez-_JM",
+      "price_label": "$ 850.000",
+      "price_value": 850000,
+      "currency": "CLP",
+      "location": "Pedro De Valdivia, 1 - 300, Inés De Suárez, Providencia"
+    },
+    "MLC2171596707": {
+      "id": "MLC2171596707",
+      "title": "Departamento En Barrio Residencial, Buena Ubicación",
+      "url": "https://portalinmobiliario.com/MLC-2171596707-departamento-en-barrio-residencial-buena-ubicacion-_JM",
+      "price_label": "$ 635.000",
+      "price_value": 635000,
+      "currency": "CLP",
+      "location": "Román Díaz 641, Providencia, Salvador, Providencia"
+    },
+    "MLC2176940611": {
+      "id": "MLC2176940611",
+      "title": "Pocuro - El Vergel",
+      "url": "https://portalinmobiliario.com/MLC-2176940611-pocuro-el-vergel-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Pocuro - El Vergel, Providencia"
+    },
+    "MLC2187466049": {
+      "id": "MLC2187466049",
+      "title": "Un Dormitorio Con Estacionamiento Y Bodega",
+      "url": "https://portalinmobiliario.com/MLC-2187466049-un-dormitorio-con-estacionamiento-y-bodega-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Jorge Matte Gormaz, Providencia, Metro Bilbao, Providencia"
+    },
+    "MLC2189062253": {
+      "id": "MLC2189062253",
+      "title": "Excelente Modalidad Flexible Con Espacios Independientes",
+      "url": "https://portalinmobiliario.com/MLC-2189062253-excelente-modalidad-flexible-con-espacios-independientes-_JM",
+      "price_label": "UF 19",
+      "price_value": 19,
+      "currency": "UF",
+      "location": "Av. Club De Campo 1 - 300, Vitacura, Tabancura, Vitacura"
+    },
+    "MLC2189064289": {
+      "id": "MLC2189064289",
+      "title": "Departamento Nuevo En Arriendo De 1 Dorm. En Providencia",
+      "url": "https://portalinmobiliario.com/MLC-2189064289-departamento-nuevo-en-arriendo-de-1-dorm-en-providencia-_JM",
+      "price_label": "UF 17",
+      "price_value": 17,
+      "currency": "UF",
+      "location": "Pedro De Valdivia/Europa, Pedro De Valdivia, Providencia"
+    },
+    "MLC2189295723": {
+      "id": "MLC2189295723",
+      "title": "Depto. Amplio De 1d/1b En Vitacura Con 1e/1b",
+      "url": "https://portalinmobiliario.com/MLC-2189295723-depto-amplio-de-1d1b-en-vitacura-con-1e1b-_JM",
+      "price_label": "$ 850.000",
+      "price_value": 850000,
+      "currency": "CLP",
+      "location": "Av. Club De Campo 1 - 300, Vitacura, Tabancura, Vitacura"
+    },
+    "MLC2193309073": {
+      "id": "MLC2193309073",
+      "title": "Un Dormitorio Amoblado  Con Bodega, Metro Manuel Montt",
+      "url": "https://portalinmobiliario.com/MLC-2193309073-un-dormitorio-amoblado-con-bodega-metro-manuel-montt-_JM",
+      "price_label": "UF 19",
+      "price_value": 19,
+      "currency": "UF",
+      "location": "Manuel Montt 1 - 300, Providencia, Manuel Montt, Providencia"
+    },
+    "MLC2196954155": {
+      "id": "MLC2196954155",
+      "title": "Nomad Bellet",
+      "url": "https://portalinmobiliario.com/MLC-2196954155-nomad-bellet-_JM",
+      "price_label": "UF 19",
+      "price_value": 19,
+      "currency": "UF",
+      "location": "Antonio Bellet 126, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC2202408383": {
+      "id": "MLC2202408383",
+      "title": "Arriendo Departamento Amoblado 1d 1b / Providencia.",
+      "url": "https://portalinmobiliario.com/MLC-2202408383-arriendo-departamento-amoblado-1d-1b-providencia-_JM",
+      "price_label": "$ 690.000",
+      "price_value": 690000,
+      "currency": "CLP",
+      "location": "Antonio Bellet 90, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC2204132457": {
+      "id": "MLC2204132457",
+      "title": "Departamento Armando Jaramillo Id: 31651",
+      "url": "https://portalinmobiliario.com/MLC-2204132457-departamento-armando-jaramillo-id-31651-_JM",
+      "price_label": "$ 790.000",
+      "price_value": 790000,
+      "currency": "CLP",
+      "location": "Armando Jaramillo, Parque Bicentenario, Vitacura"
+    },
+    "MLC2211620603": {
+      "id": "MLC2211620603",
+      "title": "A Estrenar, Como Nuevo. Providencia Plaza Las Lilas",
+      "url": "https://portalinmobiliario.com/MLC-2211620603-a-estrenar-como-nuevo-providencia-plaza-las-lilas-_JM",
+      "price_label": "$ 750.000",
+      "price_value": 750000,
+      "currency": "CLP",
+      "location": "Av. Tobalaba 1665, Providencia, Las Lilas, Providencia"
+    },
+    "MLC2211795891": {
+      "id": "MLC2211795891",
+      "title": "Metro Los Leones/ Cocina Cerrada, Loggia/ Estacionamiento",
+      "url": "https://portalinmobiliario.com/MLC-2211795891-metro-los-leones-cocina-cerrada-loggia-estacionamiento-_JM",
+      "price_label": "$ 799.000",
+      "price_value": 799000,
+      "currency": "CLP",
+      "location": "Mardoqueo Fernández 171, Providencia, Los Leones, Providencia"
+    },
+    "MLC2212103999": {
+      "id": "MLC2212103999",
+      "title": "1d/1b En Las Orquideas, Providencia",
+      "url": "https://portalinmobiliario.com/MLC-2212103999-1d1b-en-las-orquideas-providencia-_JM",
+      "price_label": "$ 720.000",
+      "price_value": 720000,
+      "currency": "CLP",
+      "location": "Las Orquídeas, Providencia, Las Lilas, Providencia"
+    },
+    "MLC2212104795": {
+      "id": "MLC2212104795",
+      "title": "Departamento A Pasos De Metro Pedro De Valdivia",
+      "url": "https://portalinmobiliario.com/MLC-2212104795-departamento-a-pasos-de-metro-pedro-de-valdivia-_JM",
+      "price_label": "$ 820.000",
+      "price_value": 820000,
+      "currency": "CLP",
+      "location": "Barcelona 2018, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC2215984923": {
+      "id": "MLC2215984923",
+      "title": "1d 1b +  Estac. A Pasos Metro Inés De Suárez",
+      "url": "https://portalinmobiliario.com/MLC-2215984923-1d-1b-estac-a-pasos-metro-ines-de-suarez-_JM",
+      "price_label": "$ 850.000",
+      "price_value": 850000,
+      "currency": "CLP",
+      "location": "Regimiento Cazadores 1222, 0, Pedro De Valdivia, Providencia"
+    },
+    "MLC2910310870": {
+      "id": "MLC2910310870",
+      "title": "Nomad Holley",
+      "url": "https://portalinmobiliario.com/MLC-2910310870-nomad-holley-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Bucarest 50, Santiago, Providencia, Los Leones, Providencia"
+    },
+    "MLC4234256998": {
+      "id": "MLC4234256998",
+      "title": "Departamento Co - Living Premium",
+      "url": "https://portalinmobiliario.com/MLC-4234256998-departamento-co-living-premium-_JM",
+      "price_label": "$ 590.000",
+      "price_value": 590000,
+      "currency": "CLP",
+      "location": "Los Laureles 1319, Santiago, Vitacura, Parque Bicentenario, Vitacura"
+    },
+    "MLC4257196510": {
+      "id": "MLC4257196510",
+      "title": "A Pasos De La Playa - Arriendo Temporal Min 3 Meses",
+      "url": "https://portalinmobiliario.com/MLC-4257196510-a-pasos-de-la-playa-arriendo-temporal-min-3-meses-_JM",
+      "price_label": "$ 700.000",
+      "price_value": 700000,
+      "currency": "CLP",
+      "location": "DEPARTAMENTO AMOBLADO EN TULUM MEXICO, Vitacura"
+    },
+    "MLC4276969286": {
+      "id": "MLC4276969286",
+      "title": "Lindo Dpto. En Arriendo - Metro Manuel Montt De 2dor",
+      "url": "https://portalinmobiliario.com/MLC-4276969286-lindo-dpto-en-arriendo-metro-manuel-montt-de-2dor-_JM",
+      "price_label": "$ 850.000",
+      "price_value": 850000,
+      "currency": "CLP",
+      "location": "Avenida Providencia, Manuel Montt, Providencia"
+    },
+    "MLC4296982018": {
+      "id": "MLC4296982018",
+      "title": "Luminoso,  Carlos Antúnez Entre Suecia / Los Leones",
+      "url": "https://portalinmobiliario.com/MLC-4296982018-luminoso-carlos-antunez-entre-suecia-los-leones-_JM",
+      "price_label": "$ 500.000",
+      "price_value": 500000,
+      "currency": "CLP",
+      "location": "Carlos Antúnez, Providencia, Los Leones, Providencia"
+    },
+    "MLC4320031120": {
+      "id": "MLC4320031120",
+      "title": "Departamento Arriendo A Estrenar Barrio Italia - Providencia",
+      "url": "https://portalinmobiliario.com/MLC-4320031120-departamento-arriendo-a-estrenar-barrio-italia-providencia-_JM",
+      "price_label": "UF 17",
+      "price_value": 17,
+      "currency": "UF",
+      "location": "Av. Francisco Bilbao 514, Providencia, Barrio Italia, Providencia"
+    },
+    "MLC4328827262": {
+      "id": "MLC4328827262",
+      "title": "Arriendo Departamento 1d/1b Amoblado En Providencia.",
+      "url": "https://portalinmobiliario.com/MLC-4328827262-arriendo-departamento-1d1b-amoblado-en-providencia-_JM",
+      "price_label": "$ 750.000",
+      "price_value": 750000,
+      "currency": "CLP",
+      "location": "Antonio Bellet 90, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4349815316": {
+      "id": "MLC4349815316",
+      "title": "Carlos Antúnez/ Av. Luis Thayer Ojeda, 1 Dorm, Estac",
+      "url": "https://portalinmobiliario.com/MLC-4349815316-carlos-antunez-av-luis-thayer-ojeda-1-dorm-estac-_JM",
+      "price_label": "$ 550.000",
+      "price_value": 550000,
+      "currency": "CLP",
+      "location": "Carlos Antúnez 2400 - 2700, Providencia, Las Lilas, Providencia"
+    },
+    "MLC4361685810": {
+      "id": "MLC4361685810",
+      "title": "Departamento A Pasos Del Mall Parque Arauco",
+      "url": "https://portalinmobiliario.com/MLC-4361685810-departamento-a-pasos-del-mall-parque-arauco-_JM",
+      "price_label": "UF 18",
+      "price_value": 18,
+      "currency": "UF",
+      "location": "Av. Pdte. Kennedy 5933, Vitacura, Las Condes, Vitacura"
+    },
+    "MLC4366170582": {
+      "id": "MLC4366170582",
+      "title": "Arriendo 2d 1b  Av. Providencia / Metro Pedro De Valdivia",
+      "url": "https://portalinmobiliario.com/MLC-4366170582-arriendo-2d-1b-av-providencia-metro-pedro-de-valdivia-_JM",
+      "price_label": "$ 690.000",
+      "price_value": 690000,
+      "currency": "CLP",
+      "location": "Av. Providencia 1500 - 1800, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4373694340": {
+      "id": "MLC4373694340",
+      "title": "Depto. 1 Dormitorio, Armando Jaramillo, Est (113156)",
+      "url": "https://portalinmobiliario.com/MLC-4373694340-depto-1-dormitorio-armando-jaramillo-est-113156-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Armando Jaramillo, Vitacura, Chile, Parque Bicentenario, Vitacura"
+    },
+    "MLC4373707116": {
+      "id": "MLC4373707116",
+      "title": "Depto. 1 Dormitorio, Armando Jaramillo, Est (113156)",
+      "url": "https://portalinmobiliario.com/MLC-4373707116-depto-1-dormitorio-armando-jaramillo-est-113156-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Armando Jaramillo, Vitacura, Chile, Parque Bicentenario, Vitacura"
+    },
+    "MLC4377011030": {
+      "id": "MLC4377011030",
+      "title": "Departamento En Arriendo De 2 Dorm. En Providencia Bucarest",
+      "url": "https://portalinmobiliario.com/MLC-4377011030-departamento-en-arriendo-de-2-dorm-en-providencia-bucarest-_JM",
+      "price_label": "UF 20",
+      "price_value": 20,
+      "currency": "UF",
+      "location": "ANDRES BELLO, Metro Tobalaba - Mall Costanera, Providencia"
+    },
+    "MLC4377018876": {
+      "id": "MLC4377018876",
+      "title": "Depto. 1 Dormitorio, Armando Jaramillo, Est (113156)",
+      "url": "https://portalinmobiliario.com/MLC-4377018876-depto-1-dormitorio-armando-jaramillo-est-113156-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Armando Jaramillo, Vitacura, Chile, Parque Bicentenario, Vitacura"
+    },
+    "MLC4377020932": {
+      "id": "MLC4377020932",
+      "title": "Excelente Departamento Amoblado En Vitacura",
+      "url": "https://portalinmobiliario.com/MLC-4377020932-excelente-departamento-amoblado-en-vitacura-_JM",
+      "price_label": "$ 650.000",
+      "price_value": 650000,
+      "currency": "CLP",
+      "location": "Armando Jaramillo, Vitacura, Parque Bicentenario, Vitacura"
+    },
+    "MLC4381516218": {
+      "id": "MLC4381516218",
+      "title": "Arriendo De Departamento En Providencia. 1 Dormitorio, 1 B.",
+      "url": "https://portalinmobiliario.com/MLC-4381516218-arriendo-de-departamento-en-providencia-1-dormitorio-1-b-_JM",
+      "price_label": "$ 730.000",
+      "price_value": 730000,
+      "currency": "CLP",
+      "location": "San Pío X 2400 - 2700, Providencia, Las Condes, Metro Tobalaba - Mall Costanera, Providencia"
+    },
+    "MLC4385482140": {
+      "id": "MLC4385482140",
+      "title": "Hermoso Departamento 2d/2b + Estacionamiento En Los Leones",
+      "url": "https://portalinmobiliario.com/MLC-4385482140-hermoso-departamento-2d2b-estacionamiento-en-los-leones-_JM",
+      "price_label": "$ 750.000",
+      "price_value": 750000,
+      "currency": "CLP",
+      "location": "Diego De Velásquez 2071, Providencia, Providencia"
+    },
+    "MLC4385492120": {
+      "id": "MLC4385492120",
+      "title": "Depto 1 Dorm Full Equipado-1er Mes Gratis",
+      "url": "https://portalinmobiliario.com/MLC-4385492120-depto-1-dorm-full-equipado-1er-mes-gratis-_JM",
+      "price_label": "UF 20",
+      "price_value": 20,
+      "currency": "UF",
+      "location": "Av. Club De Campo, Vitacura, Tabancura, Vitacura"
+    },
+    "MLC4385507772": {
+      "id": "MLC4385507772",
+      "title": "Hermoso Departamento Ubicación Privilegiada.  Sin Comisión!!",
+      "url": "https://portalinmobiliario.com/MLC-4385507772-hermoso-departamento-ubicacion-privilegiada-sin-comision-_JM",
+      "price_label": "$ 650.000",
+      "price_value": 650000,
+      "currency": "CLP",
+      "location": "Av. Tobalaba 1745, Providencia, Las Lilas, Providencia"
+    },
+    "MLC4396263646": {
+      "id": "MLC4396263646",
+      "title": "Departamento En Arriendo En Las Lilas, Providencia",
+      "url": "https://portalinmobiliario.com/MLC-4396263646-departamento-en-arriendo-en-las-lilas-providencia-_JM",
+      "price_label": "$ 720.000",
+      "price_value": 720000,
+      "currency": "CLP",
+      "location": "Av. Tobalaba 1853, 7510447 Providencia, Región Metropolitana, Chile, Las Lilas, Providencia"
+    },
+    "MLC4397432114": {
+      "id": "MLC4397432114",
+      "title": "Dp 2d-2b-est-bod Linda Vista Despejada A Parque De Embajada",
+      "url": "https://portalinmobiliario.com/MLC-4397432114-dp-2d-2b-est-bod-linda-vista-despejada-a-parque-de-embajada-_JM",
+      "price_label": "UF 19",
+      "price_value": 19,
+      "currency": "UF",
+      "location": "Román Díaz 1180, Providencia, Barrio Italia, Providencia"
+    },
+    "MLC4404569212": {
+      "id": "MLC4404569212",
+      "title": "Departamento Alonso De Córdova",
+      "url": "https://portalinmobiliario.com/MLC-4404569212-departamento-alonso-de-cordova-_JM",
+      "price_label": "$ 500.000",
+      "price_value": 500000,
+      "currency": "CLP",
+      "location": "Armando Jaramillo, Vitacura, Parque Bicentenario, Vitacura"
+    },
+    "MLC4409923768": {
+      "id": "MLC4409923768",
+      "title": "Dpto 1 Dorm 1 Baño / 1e 1b / Metro Pedro De Valdivia",
+      "url": "https://portalinmobiliario.com/MLC-4409923768-dpto-1-dorm-1-bano-1e-1b-metro-pedro-de-valdivia-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Padre Mariano 1 - 300, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4410905918": {
+      "id": "MLC4410905918",
+      "title": "Dos Dormitorios Con Dos Estacionamientos Y Bodega",
+      "url": "https://portalinmobiliario.com/MLC-4410905918-dos-dormitorios-con-dos-estacionamientos-y-bodega-_JM",
+      "price_label": "$ 800.000",
+      "price_value": 800000,
+      "currency": "CLP",
+      "location": "Matilde Salamanca 900 - 1200, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4411448278": {
+      "id": "MLC4411448278",
+      "title": "Departamento, Cercano Parque Bicentenario, Casa Costanera",
+      "url": "https://portalinmobiliario.com/MLC-4411448278-departamento-cercano-parque-bicentenario-casa-costanera-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Armando Jaramillo, Vitacura, Parque Bicentenario, Vitacura"
+    },
+    "MLC4417102134": {
+      "id": "MLC4417102134",
+      "title": "Departamento En Arriendo De 1 Dorm. En Las Condes",
+      "url": "https://portalinmobiliario.com/MLC-4417102134-departamento-en-arriendo-de-1-dorm-en-las-condes-_JM",
+      "price_label": "UF 18",
+      "price_value": 18,
+      "currency": "UF",
+      "location": "Metro Tobalaba/MUT Tobalaba, Metro Tobalaba - Mall Costanera, Providencia"
+    },
+    "MLC4421201298": {
+      "id": "MLC4421201298",
+      "title": "Depto Arriendo 1d+1b Con 1e+1b En Providencia/metro Salvador",
+      "url": "https://portalinmobiliario.com/MLC-4421201298-depto-arriendo-1d1b-con-1e1b-en-providenciametro-salvador-_JM",
+      "price_label": "$ 650.000",
+      "price_value": 650000,
+      "currency": "CLP",
+      "location": "Av. Providencia 300 - 600, Providencia, Salvador, Providencia"
+    },
+    "MLC4427640928": {
+      "id": "MLC4427640928",
+      "title": "Se Arrienda Pieza En Depto Vitacura Frente Al Parque",
+      "url": "https://portalinmobiliario.com/MLC-4427640928-se-arrienda-pieza-en-depto-vitacura-frente-al-parque-_JM",
+      "price_label": "$ 400.000",
+      "price_value": 400000,
+      "currency": "CLP",
+      "location": "Costanera Sur S.J.E. De Balaguer, Vitacura, Borde Río - Casa Piedra, Vitacura"
+    },
+    "MLC4430389390": {
+      "id": "MLC4430389390",
+      "title": "Dpto 1 Dorm Pasos Av Vitacura, Lugar Tranquilo",
+      "url": "https://portalinmobiliario.com/MLC-4430389390-dpto-1-dorm-pasos-av-vitacura-lugar-tranquilo-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Armando Jaramillo, Vitacura, Parque Bicentenario, Vitacura"
+    },
+    "MLC4430690756": {
+      "id": "MLC4430690756",
+      "title": "Estiloso Recién Remodelado 1 Dormitorio 1 Baño Con E",
+      "url": "https://portalinmobiliario.com/MLC-4430690756-estiloso-recien-remodelado-1-dormitorio-1-bano-con-e-_JM",
+      "price_label": "UF 18",
+      "price_value": 18,
+      "currency": "UF",
+      "location": "El Vergel 2341, Providencia, Los Leones, Providencia"
+    },
+    "MLC4436477726": {
+      "id": "MLC4436477726",
+      "title": "Departamento Carlos Antúnez Id: 116203",
+      "url": "https://portalinmobiliario.com/MLC-4436477726-departamento-carlos-antunez-id-116203-_JM",
+      "price_label": "UF 13",
+      "price_value": 13,
+      "currency": "UF",
+      "location": "Carlos Antúnez, Los Leones, Providencia"
+    },
+    "MLC4436478390": {
+      "id": "MLC4436478390",
+      "title": "Excelente Ubicación 1d + 1b Metro Pedro De Valdivia",
+      "url": "https://portalinmobiliario.com/MLC-4436478390-excelente-ubicacion-1d-1b-metro-pedro-de-valdivia-_JM",
+      "price_label": "$ 620.000",
+      "price_value": 620000,
+      "currency": "CLP",
+      "location": "Av. Pedro De Valdivia 0200, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4437059082": {
+      "id": "MLC4437059082",
+      "title": "Departamento En Arriendo De 2 Dorm. En Providencia",
+      "url": "https://portalinmobiliario.com/MLC-4437059082-departamento-en-arriendo-de-2-dorm-en-providencia-_JM",
+      "price_label": "$ 780.000",
+      "price_value": 780000,
+      "currency": "CLP",
+      "location": "Metro Los Leones / 2D &#43; 2B, Providencia"
+    },
+    "MLC4437283526": {
+      "id": "MLC4437283526",
+      "title": "Padre Mariano/ Providencia /metro Pedro De Valdivia",
+      "url": "https://portalinmobiliario.com/MLC-4437283526-padre-mariano-providencia-metro-pedro-de-valdivia-_JM",
+      "price_label": "UF 18",
+      "price_value": 18,
+      "currency": "UF",
+      "location": "Padre Mariano 87, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4441098136": {
+      "id": "MLC4441098136",
+      "title": "Barrio Pocuro Linda Vista",
+      "url": "https://portalinmobiliario.com/MLC-4441098136-barrio-pocuro-linda-vista-_JM",
+      "price_label": "UF 15",
+      "price_value": 15,
+      "currency": "UF",
+      "location": "Av. Pocuro 2100 - 2400, Providencia, Providencia"
+    },
+    "MLC4444274072": {
+      "id": "MLC4444274072",
+      "title": "Comodo Departamento 1 De Octubre",
+      "url": "https://portalinmobiliario.com/MLC-4444274072-comodo-departamento-1-de-octubre-_JM",
+      "price_label": "$ 800.000",
+      "price_value": 800000,
+      "currency": "CLP",
+      "location": "Diag. Ote. 1500 - 1800, Providencia, Inés De Suárez, Providencia"
+    },
+    "MLC4447097228": {
+      "id": "MLC4447097228",
+      "title": "Cómodo Y Moderno Departamento En Providencia",
+      "url": "https://portalinmobiliario.com/MLC-4447097228-comodo-y-moderno-departamento-en-providencia-_JM",
+      "price_label": "$ 620.000",
+      "price_value": 620000,
+      "currency": "CLP",
+      "location": "Manuel Montt, Providencia"
+    },
+    "MLC4447120348": {
+      "id": "MLC4447120348",
+      "title": "Hermoso Departamento Excelente Conectividad",
+      "url": "https://portalinmobiliario.com/MLC-4447120348-hermoso-departamento-excelente-conectividad-_JM",
+      "price_label": "UF 13",
+      "price_value": 13,
+      "currency": "UF",
+      "location": "Padre Mariano 87, Providencia, Pedro De Valdivia, Providencia"
+    },
+    "MLC4447126308": {
+      "id": "MLC4447126308",
+      "title": "Dpto Un Dormitorio, Barrio El Bosque, Providencia",
+      "url": "https://portalinmobiliario.com/MLC-4447126308-dpto-un-dormitorio-barrio-el-bosque-providencia-_JM",
+      "price_label": "UF 16",
+      "price_value": 16,
+      "currency": "UF",
+      "location": "Las Lilas, Providencia"
+    },
+    "MLC4447127954": {
+      "id": "MLC4447127954",
+      "title": "Departamento Pérez Valenzuela Id: 26066",
+      "url": "https://portalinmobiliario.com/MLC-4447127954-departamento-perez-valenzuela-id-26066-_JM",
+      "price_label": "$ 655.000",
+      "price_value": 655000,
+      "currency": "CLP",
+      "location": "Pérez Valenzuela, Manuel Montt, Providencia"
+    },
+    "MLC4447968610": {
+      "id": "MLC4447968610",
+      "title": "Dos Dormitorios Dos Estacionamientos Y Bodega",
+      "url": "https://portalinmobiliario.com/MLC-4447968610-dos-dormitorios-dos-estacionamientos-y-bodega-_JM",
+      "price_label": "$ 800.000",
+      "price_value": 800000,
+      "currency": "CLP",
+      "location": "Matilde Salamanca 900 - 1200, Providencia, Pedro De Valdivia, Providencia"
+    }
+  }
+}
