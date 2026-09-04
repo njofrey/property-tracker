@@ -19,26 +19,27 @@ python -m pip install -r requirements.txt
 4. Probar solamente la extracción:
 
 ```bash
-PORTAL_SEARCH_URL='https://www.portalinmobiliario.com/...' python portal_source.py
+PORTAL_SEARCH_URLS='https://www.portalinmobiliario.com/...' python3 portal_source.py
 ```
 
 5. Ejecutar el tracker:
 
 ```bash
-python check_properties.py
+python3 check_properties.py
 ```
 
 6. Ejecutar las pruebas:
 
 ```bash
-python -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
 ```
 
 La primera ejecución crea un baseline y no envía avisos antiguos. Las ejecuciones siguientes notifican IDs nuevos. Para recibir mensajes, el chat debe haber enviado `/start` al bot.
 
 ## Variables
 
-- `PORTAL_SEARCH_URL`: URL completa con filtros aplicados.
+- `PORTAL_SEARCH_URLS`: una URL completa por comuna, separadas por saltos de línea.
+  Para una sola búsqueda también se acepta la variable antigua `PORTAL_SEARCH_URL`.
 - `SEARCH_KEY`: nombre estable de la búsqueda, por ejemplo `depto-providencia`.
 - `ALERT_PRICE_DROPS`: `true` o `false`.
 - `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID`.
@@ -50,7 +51,7 @@ El workflow permite ejecución manual. El cron de 30 minutos está preparado per
 
 Secrets requeridos en GitHub:
 
-- `PORTAL_SEARCH_URL`
+- `PORTAL_SEARCH_URLS`
 - `TELEGRAM_TOKEN`
 - `TELEGRAM_CHAT_ID`
 - `UPSTASH_REDIS_REST_URL`

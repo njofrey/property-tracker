@@ -28,7 +28,7 @@ jobs:
 
       - name: Check properties
         env:
-          PORTAL_SEARCH_URL: ${{ secrets.PORTAL_SEARCH_URL }}
+          PORTAL_SEARCH_URLS: ${{ secrets.PORTAL_SEARCH_URLS }}
           SEARCH_KEY: busqueda-principal
           ALERT_PRICE_DROPS: ${{ vars.ALERT_PRICE_DROPS || 'true' }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}

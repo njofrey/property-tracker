@@ -29,7 +29,7 @@ class Property:
     title: str
     url: str
     price_label: str | None = None
-    price_value: int | None = None
+    price_value: int | float | None = None
     currency: str | None = None
     location: str | None = None
 
@@ -39,6 +39,13 @@ def extract_property_id(value: str) -> str | None:
     return f"MLC{match.group(1)}" if match else None
 
 
+def _parse_chilean_number(value: str) -> int | float:
+    """Interpreta punto de miles y coma decimal usados en Chile."""
+    normalized = value.replace(".", "").replace(",", ".")
+    number = float(normalized) if "." in normalized else int(normalized)
+    return int(number) if isinstance(number, float) and number.is_integer() else number
+
+
 def parse_price(text: str):
     match = PRICE_RE.search(text or "")
     if not match:
@@ -46,8 +53,8 @@ def parse_price(text: str):
     raw_currency = match.group("currency").upper()
     currency = {"UF": "UF", "US$": "USD", "$": "CLP"}[raw_currency]
     label = match.group(0).strip()
-    digits = re.sub(r"\D", "", match.group("amount"))
-    return label, int(digits) if digits else None, currency
+    amount = match.group("amount")
+    return label, _parse_chilean_number(amount), currency
 
 
 def _card_for(anchor):
@@ -118,11 +125,24 @@ def fetch_properties(search_url: str):
     return parse_results(response.text, search_url)
 
 
+def fetch_all_properties(search_urls: tuple[str, ...]):
+    """Extrae varias búsquedas y elimina duplicados por ID estable."""
+    found = {}
+    for search_url in search_urls:
+        for item in fetch_properties(search_url):
+            found.setdefault(item.id, item)
+    return list(found.values())
+
+
 if __name__ == "__main__":
-    url = os.environ.get("PORTAL_SEARCH_URL", "").strip()
-    if not url:
-        raise SystemExit("Falta PORTAL_SEARCH_URL")
-    items = fetch_properties(url)
+    raw_urls = os.environ.get("PORTAL_SEARCH_URLS", "").strip()
+    if raw_urls:
+        urls = tuple(line.strip() for line in raw_urls.splitlines() if line.strip())
+    else:
+        url = os.environ.get("PORTAL_SEARCH_URL", "").strip()
+        if not url:
+            raise SystemExit("Falta PORTAL_SEARCH_URLS o PORTAL_SEARCH_URL")
+        urls = (url,)
+    items = fetch_all_properties(urls)
     print(json.dumps([asdict(item) for item in items[:5]], ensure_ascii=False, indent=2))
     print(f"Total extraído: {len(items)}")
-

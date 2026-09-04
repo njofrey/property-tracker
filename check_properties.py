@@ -3,7 +3,7 @@ import traceback
 from dataclasses import asdict
 
 from config import Settings
-from portal_source import fetch_properties
+from portal_source import fetch_all_properties
 from property_state import PropertyState
 from telegram_notify import TelegramNotifier
 
@@ -26,7 +26,7 @@ def main() -> int:
     notifier = TelegramNotifier(settings.telegram_token, settings.telegram_chat_id)
 
     # Si la extracción falla, no tocamos estado: la próxima corrida puede reintentar.
-    properties = fetch_properties(settings.search_url)
+    properties = fetch_all_properties(settings.search_urls)
     items = {item.id: asdict(item) for item in properties}
     print(f"Extraídas {len(items)} publicaciones")
 
@@ -64,4 +64,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
