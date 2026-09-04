@@ -43,6 +43,17 @@ la unión por ID `MLC`.
   Providencia y 15 de Vitacura antes de deduplicar; 63 únicos).
 - Secrets pendientes: `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID` de un bot propio.
 
+## Estado técnico al cerrar el 2026-09-04
+
+- La migración principal quedó publicada en el commit `c693aa7`.
+- El workflow `Check Properties` está reconocido por GitHub y sigue solo con
+  ejecución manual; no tiene corridas todavía.
+- Upstash fue eliminado del código y de las dependencias. No se creó ni modificó
+  ninguna base para Property Tracker; `flights-bot` quedó intacta.
+- Los enlaces de propiedades se guardan sin fragments ni `tracking_id`, evitando
+  commits de estado falsos.
+- Verificación local final: 14 pruebas pasando y workflow YAML válido.
+
 ## Próximo paso exacto
 
 Mantener el cron apagado hasta configurar un bot de Telegram propio. Después confirmar
