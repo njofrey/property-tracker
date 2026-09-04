@@ -2,7 +2,7 @@ import os
 import unittest
 from unittest.mock import patch
 
-from config import _search_urls
+from config import Settings, _search_urls
 
 
 class SearchUrlsTests(unittest.TestCase):
@@ -33,6 +33,15 @@ class SearchUrlsTests(unittest.TestCase):
         ):
             with self.assertRaisesRegex(RuntimeError, "www.portalinmobiliario.com"):
                 _search_urls()
+
+    def test_allows_baseline_without_telegram_credentials(self):
+        value = "https://www.portalinmobiliario.com/providencia"
+        with patch.dict(os.environ, {"PORTAL_SEARCH_URL": value}, clear=True):
+            settings = Settings.from_env()
+            self.assertIsNone(settings.telegram_token)
+            self.assertIsNone(settings.telegram_chat_id)
+            with self.assertRaisesRegex(RuntimeError, "TELEGRAM_TOKEN"):
+                settings.telegram_credentials()
 
 
 if __name__ == "__main__":

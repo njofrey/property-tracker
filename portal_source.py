@@ -4,7 +4,7 @@ import json
 import os
 import re
 from dataclasses import asdict, dataclass
-from urllib.parse import urljoin
+from urllib.parse import urldefrag, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -76,7 +76,7 @@ def parse_results(html_text: str, base_url: str):
     found = {}
 
     for anchor in soup.find_all("a", href=True):
-        url = urljoin(base_url, anchor["href"])
+        url = urldefrag(urljoin(base_url, anchor["href"])).url
         property_id = extract_property_id(url)
         if not property_id or property_id in found:
             continue

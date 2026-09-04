@@ -35,21 +35,22 @@ def _search_urls() -> tuple[str, ...]:
 @dataclass(frozen=True)
 class Settings:
     search_urls: tuple[str, ...]
-    search_key: str
     alert_price_drops: bool
-    telegram_token: str
-    telegram_chat_id: str
-    upstash_url: str
-    upstash_token: str
+    state_file: str
+    telegram_token: str | None
+    telegram_chat_id: str | None
+
+    def telegram_credentials(self) -> tuple[str, str]:
+        if not self.telegram_token or not self.telegram_chat_id:
+            raise RuntimeError("Faltan TELEGRAM_TOKEN y TELEGRAM_CHAT_ID")
+        return self.telegram_token, self.telegram_chat_id
 
     @classmethod
     def from_env(cls):
         return cls(
             search_urls=_search_urls(),
-            search_key=os.environ.get("SEARCH_KEY", "busqueda-principal").strip(),
             alert_price_drops=_boolean("ALERT_PRICE_DROPS", True),
-            telegram_token=_required("TELEGRAM_TOKEN"),
-            telegram_chat_id=_required("TELEGRAM_CHAT_ID"),
-            upstash_url=_required("UPSTASH_REDIS_REST_URL"),
-            upstash_token=_required("UPSTASH_REDIS_REST_TOKEN"),
+            state_file=os.environ.get("STATE_FILE", "state.json").strip() or "state.json",
+            telegram_token=os.environ.get("TELEGRAM_TOKEN", "").strip() or None,
+            telegram_chat_id=os.environ.get("TELEGRAM_CHAT_ID", "").strip() or None,
         )

@@ -22,8 +22,7 @@ def is_price_drop(current: dict, previous: dict | None) -> bool:
 
 def main() -> int:
     settings = Settings.from_env()
-    state = PropertyState(settings.upstash_url, settings.upstash_token, settings.search_key)
-    notifier = TelegramNotifier(settings.telegram_token, settings.telegram_chat_id)
+    state = PropertyState(settings.state_file)
 
     # Si la extracción falla, no tocamos estado: la próxima corrida puede reintentar.
     properties = fetch_all_properties(settings.search_urls)
@@ -35,9 +34,12 @@ def main() -> int:
             state.save_item(item)
             state.mark_seen(item["id"])
         state.mark_initialized()
+        state.flush()
         print(f"Baseline creado con {len(items)} publicaciones; no se enviaron alertas")
         return 0
 
+    telegram_token, telegram_chat_id = settings.telegram_credentials()
+    notifier = TelegramNotifier(telegram_token, telegram_chat_id)
     seen = state.seen_ids()
     new_count = 0
     drop_count = 0
@@ -58,6 +60,7 @@ def main() -> int:
             print(f"[{property_id}] error procesando: {exc}", file=sys.stderr)
             traceback.print_exc()
 
+    state.flush()
     print(f"Alertas: {new_count} nuevas, {drop_count} bajas de precio")
     return 0
 

@@ -2,9 +2,12 @@ name: Check Properties
 
 on:
   workflow_dispatch:
-  # Activar después de configurar la URL y los secrets:
+  # Activar después de configurar Telegram y crear el baseline:
   # schedule:
   #   - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
 
 concurrency:
   group: property-tracker
@@ -16,23 +19,46 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          path: app
+
+      - name: Checkout tracker state
+        uses: actions/checkout@v4
+        with:
+          ref: tracker-state
+          path: state
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: app/requirements.txt
 
       - name: Install dependencies
+        working-directory: app
         run: pip install -r requirements.txt
 
       - name: Check properties
+        working-directory: app
         env:
           PORTAL_SEARCH_URLS: ${{ secrets.PORTAL_SEARCH_URLS }}
-          SEARCH_KEY: busqueda-principal
           ALERT_PRICE_DROPS: ${{ vars.ALERT_PRICE_DROPS || 'true' }}
+          STATE_FILE: ../state/state.json
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL }}
-          UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
         run: python check_properties.py
+
+      - name: Persist state
+        working-directory: state
+        run: |
+          if git diff --quiet -- state.json; then
+            echo "Estado sin cambios"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git commit -m "chore: update tracker state"
+          git push

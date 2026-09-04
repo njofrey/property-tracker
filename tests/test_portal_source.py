@@ -1,7 +1,13 @@
 import unittest
 from unittest.mock import patch
 
-from portal_source import Property, extract_property_id, fetch_all_properties, parse_price
+from portal_source import (
+    Property,
+    extract_property_id,
+    fetch_all_properties,
+    parse_price,
+    parse_results,
+)
 
 
 class PortalSourceTests(unittest.TestCase):
@@ -25,6 +31,21 @@ class PortalSourceTests(unittest.TestCase):
 
     def test_parse_usd_price(self):
         self.assertEqual(parse_price("US$ 2.000"), ("US$ 2.000", 2000, "USD"))
+
+    def test_parse_results_removes_tracking_fragment(self):
+        html = """
+        <article>
+          <a href="/MLC-123456789-depto-_JM#position=1&tracking_id=random">
+            <h2>Departamento</h2>
+          </a>
+          <span>$ 500.000</span>
+        </article>
+        """
+        item = parse_results(html, "https://www.portalinmobiliario.com/")[0]
+        self.assertEqual(
+            item.url,
+            "https://www.portalinmobiliario.com/MLC-123456789-depto-_JM",
+        )
 
     @patch("portal_source.fetch_properties")
     def test_fetch_all_properties_deduplicates_by_id(self, fetch):

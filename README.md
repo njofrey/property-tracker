@@ -1,15 +1,15 @@
 # Property Tracker
 
-Tracker personal de Portal Inmobiliario Chile. Consulta una búsqueda cada 30 minutos, recuerda los IDs vistos en Upstash y envía a Telegram solamente publicaciones nuevas o bajas de precio.
+Tracker personal de Portal Inmobiliario Chile. Consulta las búsquedas cada 30 minutos, recuerda los IDs vistos en la rama `tracker-state` y envía a Telegram solamente publicaciones nuevas o bajas de precio.
 
 ## Estado
 
-El proyecto base está listo. Falta definir la búsqueda real y validar el extractor con su HTML.
+Las búsquedas de Providencia y Vitacura están validadas. Falta conectar un bot de Telegram propio y activar el cron.
 
 ## Configuración
 
 1. Copiar `.env.example` a `.env` para una prueba local.
-2. Completar la URL y los secrets.
+2. Completar Telegram; las URLs reales ya están en el ejemplo.
 3. Instalar dependencias:
 
 ```bash
@@ -40,22 +40,19 @@ La primera ejecución crea un baseline y no envía avisos antiguos. Las ejecucio
 
 - `PORTAL_SEARCH_URLS`: una URL completa por comuna, separadas por saltos de línea.
   Para una sola búsqueda también se acepta la variable antigua `PORTAL_SEARCH_URL`.
-- `SEARCH_KEY`: nombre estable de la búsqueda, por ejemplo `depto-providencia`.
 - `ALERT_PRICE_DROPS`: `true` o `false`.
+- `STATE_FILE`: ruta del JSON persistente; GitHub Actions usa la rama `tracker-state`.
 - `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID`.
-- `UPSTASH_REDIS_REST_URL` y `UPSTASH_REDIS_REST_TOKEN`.
 
 ## GitHub Actions
 
-El workflow permite ejecución manual. El cron de 30 minutos está preparado pero comentado hasta configurar la búsqueda y los secrets. Una vez activado, GitHub puede retrasarlo durante periodos de alta carga; la cadencia no es una garantía de minuto exacto.
+El workflow permite ejecución manual. Usa `main` para el código y `tracker-state` para `state.json`. El cron de 30 minutos está preparado pero comentado hasta configurar Telegram. Una vez activado, GitHub puede retrasarlo durante periodos de alta carga; la cadencia no es una garantía de minuto exacto.
 
 Secrets requeridos en GitHub:
 
 - `PORTAL_SEARCH_URLS`
 - `TELEGRAM_TOKEN`
 - `TELEGRAM_CHAT_ID`
-- `UPSTASH_REDIS_REST_URL`
-- `UPSTASH_REDIS_REST_TOKEN`
 
 Variable opcional del repositorio:
 

@@ -6,10 +6,10 @@
 - Vive como proyecto separado y hermano de `Flights`.
 - Revisión: cada **30 minutos**.
 - Canal de alertas: Telegram.
-- Estado/deduplicación: Upstash Redis.
+- Estado/deduplicación: `state.json` en la rama `tracker-state` del mismo repositorio.
 - Runtime: GitHub Actions con Python 3.12.
 - Alertar solamente después del baseline inicial.
-- El cron de 30 minutos está preparado pero pausado hasta configurar URL y secrets.
+- El cron de 30 minutos está preparado pero pausado hasta configurar Telegram.
 
 ## Objetivo
 
@@ -37,9 +37,13 @@ la unión por ID `MLC`.
 
 - Secret `PORTAL_SEARCH_URLS`: configurado el 2026-09-04.
 - Variable `ALERT_PRICE_DROPS=true`: configurada el 2026-09-04.
-- Secrets pendientes: `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`,
-  `UPSTASH_REDIS_REST_URL` y `UPSTASH_REDIS_REST_TOKEN`.
+- Upstash descartado: el Free Tier personal ya está ocupado por `flights-bot` y
+  Nico quiere aislamiento total entre proyectos.
+- Rama `tracker-state` creada el 2026-09-04 con un baseline de 63 IDs (48 de
+  Providencia y 15 de Vitacura antes de deduplicar; 63 únicos).
+- Secrets pendientes: `TELEGRAM_TOKEN` y `TELEGRAM_CHAT_ID` de un bot propio.
 
 ## Próximo paso exacto
 
-Configurar los secrets, ejecutar manualmente para crear el baseline y confirmar una alerta controlada.
+Mantener el cron apagado hasta configurar un bot de Telegram propio. Después confirmar
+una alerta controlada y activar el cron.

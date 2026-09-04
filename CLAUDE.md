@@ -10,5 +10,4 @@ Antes de trabajar:
 
 Si Nico escribe solamente **«sigamos»**, continúa desde `MEMORY.md`; no rediseñes el proyecto ni repitas preguntas ya respondidas.
 
-Estado al 2026-09-02: scaffold y repositorio Git local creados; pruebas unitarias pasando. Falta recibir la búsqueda real, validar el extractor, configurar secrets y desplegar.
-
+Estado al 2026-09-04: búsquedas de Providencia y Vitacura validadas, estado migrado desde Upstash a la rama `tracker-state` y GitHub parcialmente configurado. Falta conectar un bot de Telegram propio y activar el cron.

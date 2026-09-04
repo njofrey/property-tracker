@@ -1,41 +1,74 @@
-import json
+"""Estado persistente del tracker en un archivo JSON."""
 
-from upstash_redis import Redis
+import json
+import os
+from pathlib import Path
 
 
 class PropertyState:
-    def __init__(self, url: str, token: str, search_key: str):
-        self.redis = Redis(url=url, token=token, rest_retries=1, rest_retry_interval=1.0)
-        self.prefix = f"property-tracker:{search_key}"
+    def __init__(self, path: str):
+        self.path = Path(path)
+        self._initialized = False
+        self._seen: set[str] = set()
+        self._items: dict[str, dict] = {}
+        self._dirty = False
+        self._load()
 
-    @property
-    def seen_key(self):
-        return f"{self.prefix}:seen"
-
-    @property
-    def items_key(self):
-        return f"{self.prefix}:items"
-
-    @property
-    def initialized_key(self):
-        return f"{self.prefix}:initialized"
+    def _load(self):
+        if not self.path.exists():
+            return
+        data = json.loads(self.path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or data.get("version") != 1:
+            raise RuntimeError(f"Estado inválido en {self.path}")
+        seen = data.get("seen")
+        items = data.get("items")
+        if not isinstance(seen, list) or not all(isinstance(item, str) for item in seen):
+            raise RuntimeError(f"Lista de IDs inválida en {self.path}")
+        if not isinstance(items, dict):
+            raise RuntimeError(f"Publicaciones inválidas en {self.path}")
+        self._initialized = data.get("initialized") is True
+        self._seen = set(seen)
+        self._items = items
 
     def initialized(self) -> bool:
-        return bool(self.redis.get(self.initialized_key))
+        return self._initialized
 
     def mark_initialized(self):
-        self.redis.set(self.initialized_key, "1")
+        if not self._initialized:
+            self._initialized = True
+            self._dirty = True
 
     def seen_ids(self):
-        return set(self.redis.smembers(self.seen_key) or [])
+        return set(self._seen)
 
     def mark_seen(self, property_id: str):
-        self.redis.sadd(self.seen_key, property_id)
+        if property_id not in self._seen:
+            self._seen.add(property_id)
+            self._dirty = True
 
     def get_item(self, property_id: str):
-        raw = self.redis.hget(self.items_key, property_id)
-        return json.loads(raw) if raw else None
+        return self._items.get(property_id)
 
     def save_item(self, item: dict):
-        self.redis.hset(self.items_key, item["id"], json.dumps(item, ensure_ascii=False))
+        if self._items.get(item["id"]) != item:
+            self._items[item["id"]] = item
+            self._dirty = True
 
+    def flush(self) -> bool:
+        if not self._dirty:
+            return False
+        payload = {
+            "version": 1,
+            "initialized": self._initialized,
+            "seen": sorted(self._seen),
+            "items": dict(sorted(self._items.items())),
+        }
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = self.path.with_name(f".{self.path.name}.tmp")
+        temporary.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        os.replace(temporary, self.path)
+        self._dirty = False
+        return True
